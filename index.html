@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMK College of Engineering and Technology</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/3452/2018/8/10/RMKCET-Thiruvallur.jpg') center/cover no-repeat;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1em;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            max-width: 100px;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color:rgba(255, 255, 255, 0.8);
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            background-color:lightgray;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            padding: 2em;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #333333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555555;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color:black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-top: 1em;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: black;
+            padding: 1em 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://th.bing.com/th/id/OIP.EId9GlwOmyhdmil59ZT4cAHaHa?rs=1&pid=ImgDetMain" alt="RMK College Logo">
+        <h1>Welcome to RMK College of Engineering and Technology</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to RMK College of Engineering and Technology. Explore our offerings and find the right path for your future.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>RMK College of Engineering and Technology is committed to providing quality education in the field of engineering and technology. Our mission is to nurture innovative and ethical engineers who contribute to society.</p>
+    </section>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <p>We offer a wide range of courses in various engineering disciplines. Our programs are designed to prepare students for successful careers in the ever-evolving field of technology.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries, please call us at <strong>(044 – 22203111)</strong>.</p>
+    </section>
+
+    <section>
+        <h2>RMK College of Engineering and Technology</h2>
+        <p>Register now to explore endless opportunities in the world of engineering and technology.</p>
+        <button class="cta-button" onclick="showRegistrationForm()">Register</button>
+        <div id="registrationForm" style="display: none;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="registrationNumber">Registration Number:</label>
+            <input type="text" id="registrationNumber" name="registrationNumber" required>
+
+            <button class="cta-button" onclick="submitRegistration()">Submit Registration</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 RMK College of Engineering and Technology. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showRegistrationForm() {
+            document.getElementById('registrationForm').style.display = 'block';
+        }
+
+        function submitRegistration() {
+            // You can add your registration submission logic here
+            alert('Registration submitted successfully!');
+        }
+    </script>
+
+</body>
+</html>
